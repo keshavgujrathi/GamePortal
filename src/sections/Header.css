@@ -1,0 +1,89 @@
+.header {
+    background-color: black;
+    color: #FFA500; 
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  @media (min-width: 768px) {
+    .header {
+      flex-direction: row;
+    }
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    height: 3rem; 
+    width: 3rem;
+  }
+  
+  .header-title {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    line-height: 1.2;
+  
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+  
+  @media (min-width: 640px) {
+    .header-title {
+      font-size: 2.25rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .header-title {
+      margin-top: 0;
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .header-title {
+      font-size: 3.75rem;
+    }
+  }
+  
+  .login-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #6C4210;
+    color: white;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #5A350F;
+  }
+  
+  @media (min-width: 640px) {
+    .login-button {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .login-button {
+      margin-top: 0;
+      font-size: 1.125rem;
+    }
+  }
+  
