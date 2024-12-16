@@ -2,7 +2,14 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-orange-500 py-6">
+    <footer
+      style={{
+        backgroundImage: "url('/assets/grad.png')", // todo: figma gradient waali img
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      className="bg-black text-orange-500 py-6"
+    >
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex flex-col items-center">
           <div className="flex space-x-6 mb-4">
@@ -12,7 +19,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-xl hover:text-orange-300"
             >
-              <i className="fab fa-instagram"></i> 
+              <i className="fab fa-instagram"></i>
             </a>
             <a
               href="https://www.facebook.com/mfcvit/"
@@ -20,7 +27,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-xl hover:text-orange-300"
             >
-              <i className="fab fa-facebook"></i> 
+              <i className="fab fa-facebook"></i>
             </a>
             <a
               href="https://www.linkedin.com/company/mfcvit/"
@@ -36,7 +43,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-xl hover:text-orange-300"
             >
-              <i className="fab fa-youtube"></i> 
+              <i className="fab fa-youtube"></i>
             </a>
             <a
               href="https://github.com/MFC-VIT"
@@ -44,14 +51,16 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-xl hover:text-orange-300"
             >
-              <i className="fab fa-github"></i> 
+              <i className="fab fa-github"></i>
             </a>
           </div>
           <div className="text-center text-sm">
-            <p>©️ 2024 COPYRIGHT: MOZILLA FIREFOX CLUB, VIT</p>
+            <p>
+            &copy; 2024 COPYRIGHT: MOZILLA FIREFOX CLUB, VIT
+            </p>
+          </div>
           </div>
         </div>
-      </div>
     </footer>
   );
 };
